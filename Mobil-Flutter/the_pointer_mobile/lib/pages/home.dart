@@ -67,6 +67,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0XFFC7FFBE),
       appBar: AppBar(
         leading: Container(),
         elevation: 0,
@@ -98,15 +99,10 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
-
       body: !loading
-
           ? SafeArea(
-
               child: Center(
-
                 child: Column(
-
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     Image(image: AssetImage('assets/logo.png')),
@@ -239,7 +235,6 @@ class _MyHomePageState extends State<MyHomePage> {
           : Center(
               child: CircularProgressIndicator(),
             ),
-
     );
   }
 }
